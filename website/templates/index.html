@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-xl-5">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>11 Parliament Street</h5>
+                            <h1>Parliament Street Medical Practice</h1>
+                            <p>
+                                <br>
+                            </p>
+                            <a href="#" class="btn_2">Make an appointment</a>
+<br><br><br><br><br><br>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner_img">
+                        <img src="{% static 'website/img/banner_img.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about us part start-->
+    <section class="about_us padding_top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="about_us_img">
+                        <img src="{% static 'website/img/front_about.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <h2>About us</h2>
+                        <p>Opening in 2011, Parliament Street Medical Practice has been providing comprehensive healthcare to both patients and employer based services</p>
+                        <a class="btn_2 " href="{% url 'about' %}">learn more</a>
+<!--                         <div class="banner_item">
+                            <div class="single_item">
+                                <img src="{% static 'website/img/icon/banner_1.svg' %}" alt="">
+                                <h5>Emergency</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="{% static 'website/img/icon/banner_2.svg' %}" alt="">
+                                <h5>Appointment</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="{% static 'website/img/icon/banner_3.svg' %}" alt="">
+                                <h5>Qualfied</h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us part end-->
+
+    <!-- feature_part start-->
+    <section class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col--8">
+                    <div class="section_tittle text-center">
+                        <h2>Our services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col">
+                    <div class="single_feature">
+                        <div class="single_feature_part">                           <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>General Practice</h4>
+                            <p>We provide comprehensive health services from health screenings, blood tests, ECG's and many more! 
+<br>
+                        <a type="button" class="btn btn-outline-primary" href="{% url 'generalPractice' %}" >More Info</a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Cruise Employment Medicals</h4>
+                            <p>We are a provider of Cruise employment medical services in Ireland. New employees requiring medical evaluations can book their exams with us. You should allow one and a half hours for the comprehensive medical. to make an appointment and for further guidance related to your exam.
+                                <br>
+                            <a type="button" class="btn btn-outline-primary" href="{% url 'cruise' %}" >More Info</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Occupational Health</h4>
+                            <p>Contact us regarding our services related to work absence management, job site assessments, risk assessments, management of work related illness and injury, or with any concern or questions you may have.
+                                <br>
+                            <a type="button" class="btn btn-outline-primary" href="{% url 'occupational' %}" >More Info</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Children's Health</h4>
+                            <p>Immunisation is a simple safe and effective way of protecting your child against certain diseases. The risks from having these diseases are far greater than the risk of any minor side effects from immunisation.
+
+                            We provide immunizations for your baby as recommended by the HSE
+<br>                        
+                            <a type="button" class="btn btn-outline-primary" href="{% url 'womensHealth' %}" >More Info</a>
+                        </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Seafarers Medicals</h4>
+                            <p>We offer a comprehensive medical examination for those who require a Seafarer Medical Certificate (ENG-11), mercantile marine, and fishing services requiring an eyesight test certificate are also available. Our medical services are fully approved by the Department of Transport, and we can issue the relevant certificates to you required by law. We also provide 2 year renewal checks. The consultation will include a full medical examination, and you will need to present a photo ID with your previous certificate.
+                                <br>
+                        <a type="button" class="btn btn-outline-primary" href="{% url 'seafarers' %}" >More Info</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Women's Health</h4>
+                            <p>The National Cervical Screening Program provides free smear tests to women aged 25 to 60. A smear test is a simple procedure that only takes minutes and is the most effective way to detect changes in the cells of the cervix. For more information on Cervical Smears please select the "HSE Scheme" button.
+                                <br>
+                        <a type="button" class="btn btn-outline-primary" href="{% url 'womensHealth' %}" >More Info</a>
+                            </p>
+                        </div>
+                </div>
+
+<!--                     <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{% static 'website/img/icon/medical_icon.svg' %}" alt=""></span>
+                            <h4>Oil and Gas UK</h4>
+                            <p>The National Cervical Screening Program provides free smear tests to women aged 25 to 60. A smear test is a simple procedure that only takes minutes and is the most effective way to detect changes in the cells of the cervix. For more information on Cervical Smears please select the "HSE Scheme" button.
+                                <br>
+                        <a type="button" class="btn btn-outline-primary" href="{% url 'OGUK' %}" >More Info</a>
+                            </p>
+                        </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </section>
+    <!-- feature_part start-->
+
+
+
+
+ 
+    <!--::regervation_part end::-->
+
+
+    <!--::blog_part start::
+    <section class="blog_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2>Our Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="blog.html">
+                                    <h5 class="card-title">First cattle which earth unto let health for
+                                        can get and see what you </h5>
+                                </a>
+                                <ul>
+                                    <li> <span class="ti-user"></span>Jhon mike</li>
+                                    <li> <span class="ti-bookmark"></span>Clinic, doctors</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="blog.html">
+                                    <h5 class="card-title">First cattle which earth unto let health for
+                                        can get and see what you </h5>
+                                </a>
+                                <ul>
+                                    <li> <span class="ti-user"></span>Jhon mike</li>
+                                    <li> <span class="ti-bookmark"></span>Clinic, doctors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    ::blog_part end::-->
+    
+    
+
+
+
+{% endblock %}
