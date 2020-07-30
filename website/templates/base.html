@@ -38,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo.png' %}" alt="logo"> </a>
+                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default1.png' %}" class="rounded" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -191,16 +191,18 @@
                                         placeholder="Email address" name='your-email'>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="number" class="form-control" id="inputNumber4"
-                                        placeholder="Phone Number" name='your-number'>
+                                    <input type="tel" class="form-control" id="inputNumber4"
+                                        placeholder="Phone Number  e.g.0843671630" name='your-number'>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <select class="form-control" id="Select" name='your-service'>
                                         <option value="1" selected>Select service</option>
-                                        <option value="2">Name of service</option>
-                                        <option value="3">Name of service</option>
-                                        <option value="4">Name of service</option>
-                                        <option value="5">Name of service</option>
+                                        <option value="2">General Practice</option>
+                                        <option value="3">Women's Health</option>
+                                        <option value="4">Occupational Health</option>
+                                        <option value="5">Seafarers Medical</option>
+                                        <option value="5">Cruise Medical</option>
+
                                     </select>
                                 </div>
 
@@ -212,14 +214,12 @@
                                         <option value="1">12PM TO 2PM</option>
                                         <option value="1">2PM TO 4PM</option>
                                         <option value="1">4PM TO 6PM</option>
-                                        <option value="1">6PM TO 8PM</option>
-                                        <option value="1">4PM TO 10PM</option>
-                                        <option value="1">10PM TO 12PM</option>
+
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <input type="date" class="form-control" id="inputNumber4"
-                                        placeholder="Date" name='your-date'>
+                                        placeholder="Date  e.g.10-6-2020" name='your-date'>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <textarea class="form-control" id="Textarea" rows="4"
@@ -239,11 +239,11 @@
                             <h1 class='text-white'>Opening Hours</h1>
 
                             <p class='text-white'>
-                                Monday <br>
-                                Tuesday <br>
-                                Wednesday <br>
-                                Thursday <br>
-                                Friday <br>
+                                Monday: 10am-2pm, 3pm-6pm <br>
+                                Tuesday: 10am-2pm, 3pm-6pm <br>
+                                Wednesday: 10am-2pm, 3pm-6pm <br>
+                                Thursday: 10am-2pm, 3pm-6pm <br>
+                                Friday: 10am-2pm, 3pm-6pm <br>
 
 
                             </p>
