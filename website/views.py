@@ -37,7 +37,7 @@ def contact(request):
 			subject, #subject
 			message,#Message
 			email,#from email
-			['ryanting2001gmail.com'],#to email
+			['ryanting2001@gmail.com'],#to email
 
 			)
 
