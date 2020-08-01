@@ -25,6 +25,10 @@ def seafarers(request):
 def cruise(request):
 	return render(request, 'cruise.html', {})
 
+def employment(request):
+	return render(request, 'employment.html', {})
+	
+
 def contact(request):
 	if request.method == "POST":
 		message = request.POST['main-message']

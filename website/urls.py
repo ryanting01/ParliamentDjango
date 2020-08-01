@@ -7,6 +7,8 @@ urlpatterns = [
 	path('generalPractice', views.generalPractice, name="generalPractice"),
 	path('womensHealth', views.womensHealth, name="womensHealth"),
 	path('OGUK', views.OGUK, name="OGUK"),
+	path('employment', views.employment, name="employment"),
+
 	path('appointment', views.appointment, name="appointment"),
 
 

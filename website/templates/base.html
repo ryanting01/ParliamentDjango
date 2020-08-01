@@ -38,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default1.png' %}" class="rounded" alt="logo"> </a>
+                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default.png' %}" class="rounded" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -67,12 +67,15 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Employment Medicals
+                                        Occupational Health
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{% url 'occupational' %}">Occupational</a>
-                                        <a class="dropdown-item" href="{% url 'seafarers' %}">Seafarers Medicals</a>
+                                        <a class="dropdown-item" href="{% url 'occupational' %}">Occupational Health Assessment</a>
+                                        <a class="dropdown-item" href="{% url 'seafarers' %}">Seafarers Medicals (ENG11)</a>
                                         <a class="dropdown-item" href="{% url 'cruise' %}">Cruise Medicals</a>
+                                        <a class="dropdown-item" href="{% url 'employment' %}">Employment Medical</a>
+                                        <a class="dropdown-item" href="{% url 'OGUK' %}">OGUK</a>
+
                                     </div>
                                 </li>
                                 
@@ -82,7 +85,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="btn_2 d-none d-lg-block" href="tel:00353877848174">CALL - 0877848174</a>
+                        <a class="btn_2 d-none d-lg-block" href="tel:0035316779112">CALL - 016779112</a>
                     </nav>
                 </div>
             </div>
@@ -90,6 +93,9 @@
     </header>
      <!--Header part end-->
 		
+<div class="alert alert-warning" role="alert">
+  Due to the recent events concerning the spread of COVID-19, we will not be accepting walk-ins. Please book an appointment in advance
+</div>
 
 
 {% block content %}
@@ -210,7 +216,7 @@
 
                                 <div class="form-group time_icon col-md-6">
                                     <select class="form-control" id="Select2" name='your-time'>
-                                        <option value="Preffered Appointment Time" selected>Preffered Appointment Time</option>
+                                        <option value="Preffered Appointment Time" selected>Preferred Appointment Time</option>
                                         <option value="8 AM TO 10AM">8AM TO 10AM</option>
                                         <option value="10 AM TO 12PM">10AM TO 12PM</option>
                                         <option value="12PM TO 2PM">12PM TO 2PM</option>
@@ -244,8 +250,9 @@
                                 Monday: 10am-2pm, 3pm-6pm <br>
                                 Tuesday: 10am-2pm, 3pm-6pm <br>
                                 Wednesday: 10am-2pm, 3pm-6pm <br>
-                                Thursday: 10am-2pm, 3pm-6pm <br>
+                                Thursday: 2pm-6pm <br>
                                 Friday: 10am-2pm, 3pm-6pm <br>
+                                Closed on Weekends and Bank Holidays
 
 
                             </p>
