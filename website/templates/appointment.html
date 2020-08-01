@@ -32,12 +32,12 @@
 </head>
 
 
-<header class="main_menu">
+    <header class="main_menu">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default1.png' %}" alt="logo"> </a>
+                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default.png' %}" class="rounded" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -66,12 +66,15 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Employment Medicals
+                                        Occupational Health
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{% url 'occupational' %}">Occupational</a>
-                                        <a class="dropdown-item" href="{% url 'seafarers' %}">Seafarers Medicals</a>
+                                        <a class="dropdown-item" href="{% url 'occupational' %}">Occupational Health Assessment</a>
+                                        <a class="dropdown-item" href="{% url 'seafarers' %}">Seafarers Medicals (ENG11)</a>
                                         <a class="dropdown-item" href="{% url 'cruise' %}">Cruise Medicals</a>
+                                        <a class="dropdown-item" href="{% url 'employment' %}">Employment Medical</a>
+                                        <a class="dropdown-item" href="{% url 'OGUK' %}">OGUK</a>
+
                                     </div>
                                 </li>
                                 
@@ -81,7 +84,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="btn_2 d-none d-lg-block" href="#">CALL - 0877848174</a>
+                        <a class="btn_2 d-none d-lg-block" href="tel:0035316779112">CALL - 016779112</a>
                     </nav>
                 </div>
             </div>
@@ -116,7 +119,7 @@
 
 <br><br>
 
-<strong>Note: </strong> This appointment hasn't been set. We will contact you shortly via telephone to confirm your appointment
+<strong>Note: </strong> This appointment hasn't been comfirmed. We will contact you shortly via telephone to confirm your appointment
 
 </center>
 
@@ -193,13 +196,7 @@
               <p>Mon to Fri 9am to 6pm</p>
             </div>
           </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3>support@colorlib.com</h3>
-              <p>Send us your query anytime!</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
