@@ -41,7 +41,7 @@ def contact(request):
 			subject, #subject
 			message,#Message
 			email,#from email
-			['ryanting2001@gmail.com'],#to email
+			['kennethtingweihock@gmail.com'],#to email
 
 			)
 
@@ -74,7 +74,7 @@ def appointment(request):
 			'\ndate: ' + your_date + 
 			'\nnote: ' + your_note, #Message
 			your_email,#from email
-			['ryanting2001@gmail.com'],#to email
+			['kennethtingweihock@gmail.com'],#to email
 
 			)
 
