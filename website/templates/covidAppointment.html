@@ -1,0 +1,219 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name='description' content='{% block meta_description %}{% endblock %}'>
+    <title> {% block title %} Parliament Street {% endblock %}</title>
+
+    <link rel="icon" href="{% static 'website/img/favicon.png' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css'%}">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/themify-icons.css' %}">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/flaticon.css' %}">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/nice-select.css' %}">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/slick.css' %}">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="/"> <img src="{% static 'website/img/logo/default.png' %}" class="rounded" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'generalPractice' %}">General Practice</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'womensHealth' %}">Women's Health</a>
+                                </li>
+<!--                                 <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'OGUK' %}">Oil and Gas</a>
+                                </li> -->
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Occupational Health
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{% url 'occupational' %}">Occupational Health Assessment</a>
+                                        <a class="dropdown-item" href="{% url 'seafarers' %}">Seafarers Medicals (ENG11)</a>
+                                        <a class="dropdown-item" href="{% url 'cruise' %}">Cruise Medicals</a>
+                                        <a class="dropdown-item" href="{% url 'employment' %}">Employment Medical</a>
+                                        <a class="dropdown-item" href="{% url 'OGUK' %}">OGUK</a>
+
+                                    </div>
+                                </li>
+                                
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn_2 d-none d-lg-block" href="tel:0035316779112">CALL - 016779112</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- breadcrumb start-->
+  <section class="breadcrumb_part breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner">
+            <div class="breadcrumb_iner_item">
+              <h2>Appointment</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb start-->
+<center>
+  <h1>Review your Information</h1>
+
+<strong>Your First Name: </strong>{{your_first_name}}<br>
+<strong>Your Last Name: </strong>{{your_last_name}}<br>
+<strong>Your Date of Birth: </strong>{{your_DOB}}<br>
+<strong>Your Email: </strong>{{your_email}}<br>
+<strong>Your Phone Number: </strong>{{your_number}}<br>
+<strong>Your PPS: </strong>{{your_PPS}}<br>
+<strong>Your Factors: </strong>{{your_factors}}<br>
+<strong>Your Note: </strong>{{your_note}}<br>
+
+<br><br>
+
+<strong>Note: </strong> This vaccine appointment has not yet been scheduled. We will contact you shortly via telephone to confirm your eligibility and confirm your appointment time
+
+</center>
+
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section section_padding">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height: 480px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6458.976464960497!2d-6.272973838179716!3d53.34427628475107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9d4e2026b7%3A0x36dfda8047032bf5!2s11%20Parliament%20St%2C%20Temple%20Bar%2C%20Dublin%2C%20D02%20V277!5e0!3m2!1sen!2sie!4v1594984399387!5m2!1sen!2sie" width="900" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+
+
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+        </script>
+
+
+      </div>
+
+
+
+      <div class="row">
+<!--         <div class="col-12">
+          <h2 class="contact-title">Get in Touch - {{ name }}</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="{% url 'contact' %}" method="post" id="contactForm"
+            novalidate="novalidate">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+
+                  <textarea class="form-control w-100" name="main_message" id="message" cols="30" rows="9"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                    placeholder='Enter Message'></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="message-name" id="name" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="message-email" id="email" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="message-subject" id="subject" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Subject'" placeholder='Enter Subject'>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_1">Send Message</button>
+            </div>
+          </form> -->
+        </div>
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <div class="media-body">
+              <h3>Parliament Street, Dublin.</h3>
+              <p>Dublin, D02 V277</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3>087 784 8174</h3>
+              <p>Mon to Fri 9am to 6pm</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ contact section end ================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+

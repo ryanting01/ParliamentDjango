@@ -8,6 +8,11 @@ urlpatterns = [
 	path('womensHealth', views.womensHealth, name="womensHealth"),
 	path('OGUK', views.OGUK, name="OGUK"),
 	path('employment', views.employment, name="employment"),
+		
+	path('covid', views.covid, name="covid"),
+	path('covidAppointment', views.covidAppointment, name="covidAppointment"),
+
+
 
 	path('appointment', views.appointment, name="appointment"),
 

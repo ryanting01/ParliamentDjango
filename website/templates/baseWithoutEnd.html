@@ -96,10 +96,10 @@
 <div class="alert alert-warning" role="alert">
   Due to the recent events concerning the spread of COVID-19, we will not be accepting walk-ins. Please book an appointment in advance
 </div>
-<!-- <div class="alert alert-warning" role="alert" href="{% url 'covid' %}">
+<div class="alert alert-warning" role="alert" href="{% url 'covid' %}">
     For more information on the COVID-19 vaccine.
     <a  href="{% url 'covid' %}"> CLICK HERE </a>
-  </div> -->
+  </div>
 
 
 
@@ -185,92 +185,7 @@
 -->
 
     <!-- Start Button -->
-    <section class="regervation_part section_padding">
-        <div class="container">
-            <div class="row align-items-center regervation_content">
-                <div class="col-lg-7">
-                    <div class="regervation_part_iner">
-                        <form action="{% url 'appointment' %}" role='form' method='post'>
-                            {% csrf_token %}
-                            <h2>Make an Appointment</h2>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="name" class="form-control" id="inputName4" placeholder="Name" name='your-name'>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="inputEmail4"
-                                        placeholder="Email address" name='your-email'>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="tel" class="form-control" id="inputNumber4"
-                                        placeholder="Phone Number  e.g.0843671630" name='your-number'>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select" name='your-service'>
-                                        <option value="1" selected>Select service</option>
-                                        <option value="General Practice">General Practice</option>
-                                        <option value="Women's Health">Women's Health</option>
-                                        <option value="Occupational Health">Occupational Health</option>
-                                        <option value="Seafarers Medical">Seafarers Medical</option>
-                                        <option value="Cruise Medical">Cruise Medical</option>
-                                        <option value="Employment Medical">Employment Medical</option>
-                                        <option value="OOGUK">Oil & Gas UK</option>
-                                        <option value="Other">Other</option>
 
-
-
-                                    </select>
-                                </div>
-
-                                <div class="form-group time_icon col-md-6">
-                                    <select class="form-control" id="Select2" name='your-time'>
-                                        <option value="Preffered Appointment Time" selected>Preferred Appointment Time</option>
-                                        <option value="8 AM TO 10AM">8AM TO 10AM</option>
-                                        <option value="10 AM TO 12PM">10AM TO 12PM</option>
-                                        <option value="12PM TO 2PM">12PM TO 2PM</option>
-                                        <option value="2PM TO 4PM">2PM TO 4PM</option>
-                                        <option value="4PM TO 6PM">4PM TO 6PM</option>
-
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="date" class="form-control" id="inputNumber4"
-                                        placeholder="Date  e.g.10-6-2020" name='your-date'>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="Textarea" rows="4"
-                                        placeholder="Your Note " name='your-note'></textarea>
-                                </div>
-
-                            </div>
-                            <div class="regerv_btn">
-                                <button type='submit' class="btn_2">Make an Appointment</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="reservation_img">
-                        <center>                        
-                            <h1 class='text-white'>Opening Hours</h1>
-
-                            <p class='text-white'>
-                                Monday: 10am-2pm, 3pm-6pm <br>
-                                Tuesday: 10am-2pm, 3pm-6pm <br>
-                                Wednesday: 10am-2pm, 3pm-6pm <br>
-                                Thursday: 2pm-6pm <br>
-                                Friday: 10am-2pm, 3pm-6pm <br>
-                                Closed on Weekends and Bank Holidays
-
-
-                            </p>
-                        </center>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 

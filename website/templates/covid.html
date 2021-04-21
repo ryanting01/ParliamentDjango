@@ -1,0 +1,221 @@
+{% extends 'baseWithoutEnd.html' %}
+
+{% load static %}
+{% block title %} COVID-19 Vaccine {% endblock %}
+{% block meta_description %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<!doctype html>
+
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb_part breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Vaccine Rollout Update - 15th April</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!-- about us part start-->
+    <section class=" single_about_padding">
+        <div class="container">
+            <p class="h3 text-dark"> Cohort 4 and Cohort 7 GP Vaccination (aged 18-59) - updated 14/04/21</p>
+                <p class="h4 text-dark "> Cohort 4 - late April </p>
+                <p >From the beginning of April, we will be supporting the roll-out of vaccines to cohort 4 and cohort 7 patients. These include patients from the ages of 16-69 who are high risk. The 
+                  
+                  
+                  our clinic will be supporting the hospital roll-out of Cohort 4 patients to vaccinate those that do not attend the hospital or have not been invited by their hospital teams and who are aged 18-59 (patients 60-69 will be vaccinated in mass vaccination clinics, registration can be made through the online portal). We will start this process with ‘very high risk patients’ and we have been asked to prioritise patients in the following groups:
+                </p> 
+                <ul class="text-secondary">
+                  <li >&#9642; Diabetes where the patient has HbA1c > 58mmol/mol in last 12 months</li>
+                  <li >&#9642; Obesity  where patients have a BMI > 40</li>
+                  <li >&#9642; Chronic Respiratory Disease where patient is on home oxygen, pre or post transplantation or with a hospital admission related to disease in past year</li>
+                  <li >&#9642; Patients with Prader Willi syndrome</li>
+                </ul>
+<br>
+                <p class="text-dark">We will have a small amount of capacity for patients who have not yet been vaccinated by their hospital clinics. A full list of qualifying illnesses can be found lower down on this page.  If you are in Cohort 4 and have not yet been contacted for vaccination by ourselves or hospital clinic, please complete the form below. Where possible, we would encourage these vaccines to be given in hospital through specialist clinics as originally planned.</p> 
+                <br><br>
+                Cohort 7 - May
+                Once Cohort 4 is complete, we will be moving on to the next phase of vaccination in General Practice for patients aged 18-59 with medical conditions that put them at a high risk of severe disease or death. We are waiting on the exact guidance on this cohort, however gov.ie lists the categories of illness as below:
+                <br><br>
+                Cancer -  Haematological - within 1 -5 years, Non-haematological - within 1 year. All other cancers on non-hormonal treatment.
+                Chronic heart (and vascular) disease - Chronic heart disease, for example: heart failure, hypertensive cardiac disease.
+                Chronic kidney disease - Chronic kidney disease with eGFR <30ml/min.
+                Chronic liver disease- for example: cirrhosis or fibrosis.
+                Chronic neurological disease or condition - Chronic neurological disease or condition significantly compromising respiratory function and/or the ability to clear secretions, for example: Parkinson's disease, cerebral palsy.
+                Chronic respiratory disease - Other chronic respiratory disease, for example: stable cystic fibrosis, severe asthma (continuous or repeated use of systemic corticosteroids), moderate COPD.
+                Diabetes - All other diabetes (Type 1 and 2).
+                Immunocompromised - Immunocompromise due to disease or treatment, for example: high dose systemic steroids (as defined in Immunisation Guidelines for Ireland Chapter 3), persons living with HIV.
+                Inherited metabolic diseases - Disorders of intermediary metabolism not fulfilling criteria for very high risk.
+                Intellectual disability* excluding Down Syndrome (already vaccinated in Cohort4).
+                Obesity - BMI >35 Kg/m2.
+                Severe mental illness - for example: schizophrenia, bipolar disorder, severe depression.
+                If you think you fall into either Cohort 4 or 7, please complete the below form so we can crosscheck your records, confirm the cohort you belong to and ensure you are listed for vaccination if appropriate. Please note, both of the above groups will be vaccinated with Pfizer vaccine, which is 2 doses given 4 weeks apart. There currently is no ability to choose between vaccine types, we would encourage you to take the first vaccine you are offered to ensure you are protected from Coronavirus as soon as possible. 
+               
+
+        </div>
+    </section>
+    <!-- about us part end-->
+
+
+    <!-- Start Button -->
+    <section class="regervation_part section_padding">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                    <div class="regervation_part_iner">
+                        <form action="{% url 'covidAppointment' %}" role='form' method='post'>
+                            {% csrf_token %}
+                            <h2>Covid Vaccine Contact Form</h2>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="First Name" class="form-control" id="inputFirstName4" placeholder="First Name" name='your-first-name'>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="Last Name" class="form-control" id="inputLastName4" placeholder="Last Name" name='your-last-name'>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="Date of Birth" class="form-control" id="inputDateOFBirth4"
+                                        placeholder="Date of Birth" name='your-date-of-birth'>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="Email address" name='your-email'>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="tel" class="form-control" id="inputNumber4"
+                                        placeholder="Phone Number  e.g.0843671630" name='your-number'>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="PPS" class="form-control" id="inputPPS4"
+                                        placeholder="PPS Number" name='your-pps'>
+                                </div>
+                            </div>
+                            <div class="text-white">
+                              <div class="form-group time_icon">
+                                <select class="form-control" id="Select2" name='your-cohort'>
+                                    <option value="Which Cohort" selected>Please select your cohort</option>
+                                    <option value="Cohort 4">Cohort 4</option>
+                                    <option value="Cohort 7">Cohort 7</option>
+                                </select>
+                              </div>
+                              <div>&nbsp;</div>
+
+                                <h3 class="text-white">Risk Factors for high/very high risk patients *</h3>
+                                <h5 class="text-white">Please detail the medical condition(s) that put you at higher risk of serious illness as per the Cohort 4&7  illness categories</h5>
+                              <div name='your-factors' id="SelectFactor">
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input text-white" value="\nDiabetes">Diabetes - HBA1C > 58 over the last 12 months - C4
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Obesity">Obesity - BMI > 40 - C4
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Severe Chronic Respiratory disease" >Severe Chronic Respiratory disease (home oxygen or recent hospital admission with respiratory illness) - C4
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Prader Willi Syndrome" >Prader Willi Syndrome - C4
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Other Cohort 4 not listed" >Other Cohort 4 not listed
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Cancer - C7" >Cancer - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Chronic heart/vascular disease - C7" >Chronic heart/vascular disease - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Chronic Kidney disease eGFR<30 - C7" >Chronic Kidney disease eGFR < 30 - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value=  "   Chronic Liver Disease - C7" >Chronic heart/Chronic Liver Disease - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name='your-factors' value="   Chronic Neurological Disease - C7" >Chronic Neurological Disease - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Chronic Respiratory Disease - C7" >Chronic Respiratory Disease - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Diabetes - All type 1 and 2 - C7" >Diabetes - All type 1 and 2 - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Immunocompromised - C7" >Immunocompromised - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Inherited Metabolic Disease - C7" >Inherited Metabolic Disease - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Intellectual Disability - C7" >Intellectual Disability - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Obesity- BMI>35 - C7" >Obesity- BMI > 35 - C7
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" name='your-factors' class="form-check-input" value="   Severe Mental Illness - C7" >Severe Mental Illness - C7
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" id="Textarea" rows="4"
+                                    placeholder="Further Information " name='further-information'></textarea>
+                            </div>
+                            <div class="regerv_btn">
+                                <button type='submit' class="btn_2">Make an Appointment</button>
+                            </div>
+                        </form>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
